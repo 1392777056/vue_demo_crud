@@ -6,6 +6,8 @@ import com.taobao.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -18,7 +20,7 @@ import java.util.List;
  * @Date 2018/8/17 14:54
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = SpringBootApplicationRunner.class)
+@SpringApplicationConfiguration(classes = SpringBootApplicationRunner.class)
 public class SpringBootJunitTest {
 
     @Autowired
